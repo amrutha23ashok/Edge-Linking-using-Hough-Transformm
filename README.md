@@ -51,8 +51,7 @@ cv2.destroyAllWindows()
 
 #Detect points that form a line using HoughLinesP
 ```
-lines =cv2.HoughLinesP(canny_edges, 1, np.pi/180,threshold = 15, minLineLength =5 ,
-maxLineGap = 7)
+lines =cv2.HoughLinesP(canny_edges, 1, np.pi/180,threshold = 15, minLineLength =5 ,maxLineGap = 7)
 
 ```
 
@@ -74,10 +73,12 @@ cv2.destroyAllWindows()
 ## Output
 
 ### Input image and grayscale image
-![output](./p1.png)
+![image](https://github.com/user-attachments/assets/dc855075-dcb4-4e91-a3e4-1125dc952f27)
+
 
 ### Canny Edge detector output
-![output](./p2.png)
+![image](https://github.com/user-attachments/assets/d053aafa-b3fa-4cec-8231-6360fc1752ad)
+
 
 ### Display the result of Hough transform
-![output](./p3.png)
+
