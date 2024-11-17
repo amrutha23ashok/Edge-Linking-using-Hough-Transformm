@@ -26,7 +26,7 @@ Using the HoughLinesP(),detect line co-ordinates for every points in the images.
 Developed by: SANJAY SS
 REGISTER NUMBER: 212222230132
 ```
-#Read image and convert it to grayscale image
+Read image and convert it to grayscale image
 ```
 import cv2
 import numpy as np
@@ -41,7 +41,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 
 ```
-#Find the edges in the image using canny detector and display
+Find the edges in the image using canny detector and display
 ```
 canny_edges = cv2.Canny(img, 50, 120)
 cv2.imshow('canny',canny_edges)
@@ -49,13 +49,13 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-#Detect points that form a line using HoughLinesP
+Detect points that form a line using HoughLinesP
 ```
 lines =cv2.HoughLinesP(canny_edges, 1, np.pi/180,threshold = 15, minLineLength =5 ,maxLineGap = 7)
 
 ```
 
-#Draw lines on the image
+Draw lines on the image
 ```
 for line in lines:
  x1,y1,x2,y2 = line[0]
@@ -63,7 +63,7 @@ for line in lines:
 ```
 
 
-#Display the result
+Display the result
 ```
 cv2.imshow('hough_detected',r)
 cv2.waitKey(0)
@@ -73,12 +73,16 @@ cv2.destroyAllWindows()
 ## Output
 
 ### Input image and grayscale image
-![image](https://github.com/user-attachments/assets/dc855075-dcb4-4e91-a3e4-1125dc952f27)
+![image](https://github.com/user-attachments/assets/caabbeca-971e-466e-b10e-df86f8d5d581)
+![image](https://github.com/user-attachments/assets/ef622d9f-64fc-438c-a1ca-9e38ff373a15)
 
 
 ### Canny Edge detector output
-![image](https://github.com/user-attachments/assets/d053aafa-b3fa-4cec-8231-6360fc1752ad)
+![image](https://github.com/user-attachments/assets/ac239b54-f02e-407a-913c-4ba306a0d6eb)
 
 
 ### Display the result of Hough transform
+![image](https://github.com/user-attachments/assets/8ff2259e-93e7-4d7a-a399-1b9c51c5c299)
 
+## Result:
+Thus, To write a Python program to detect the lines using Hough Transform is executed successfully.
