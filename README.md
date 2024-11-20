@@ -23,8 +23,8 @@ Using the HoughLinesP(),detect line co-ordinates for every points in the images.
 
 ### program:
 ```
-Developed by: SANJAY SS
-REGISTER NUMBER: 212222230132
+Developed by: amrutha
+REGISTER NUMBER: 212222110004
 ```
 Read image and convert it to grayscale image
 ```
@@ -86,3 +86,4 @@ cv2.destroyAllWindows()
 
 ### Result:
 Thus, To write a Python program to detect the lines using Hough Transform is executed successfully.
+
